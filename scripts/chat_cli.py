@@ -45,10 +45,8 @@ conversation_tokens = [bos]
 while True:
 
     if args.prompt:
-        # Get the prompt from the launch command
         user_input = args.prompt
     else:
-        # Get the prompt interactively from the console
         try:
             user_input = input("\nUser: ").strip()
         except (EOFError, KeyboardInterrupt):
